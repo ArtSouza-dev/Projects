@@ -194,6 +194,7 @@ int main(){
                                                 modesCounter++; 
                                     }
                                 }
+                                break;
                                 
                                 case 1:
                                 for (int j=0; j<3; j++){
@@ -217,6 +218,7 @@ int main(){
                                             modesCounter++; 
                                     }            
                                 }
+                                break;
                             }
                         }
                     }
@@ -326,8 +328,8 @@ void fillVg(){
                     scanf("%d", &games[k].modes[i][j]);
                     break;
                 }
-                break;
             }
+            break;
             
             case 1:
             for (int j=0; j<3; j++){
@@ -346,8 +348,8 @@ void fillVg(){
                     scanf("%d", &games[k].modes[i][j]);
                     break;
                 }
-                break;
-            }    
+            }
+            break;    
         }
     }
     
@@ -393,8 +395,8 @@ void printVg(int k){
                     printf("The game is locally based and support competition mode");
                     break;
                 }
-                break;
             }
+
             if (i==1){
                 switch (j){
                     case 0: 
@@ -412,7 +414,6 @@ void printVg(int k){
                     printf("The game is cloud based and support competition mode");
                     break;
                 }
-                break;
             }
         }
     }
